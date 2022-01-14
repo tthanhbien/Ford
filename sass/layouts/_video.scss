@@ -1,0 +1,10 @@
+.video {
+  padding: 90px 0px 0;
+  @include Responsive(XS) {
+    padding: 0;
+  }
+  video {
+    max-width: 100%;
+    height: auto;
+  }
+}

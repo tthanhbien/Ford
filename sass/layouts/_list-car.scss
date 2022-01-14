@@ -1,0 +1,192 @@
+.tab-content {
+  .car-content {
+    .car-label.hiden {
+      opacity: 0;
+    }
+    .car-label {
+      display: flex;
+      align-items: center;
+      .car-label-img {
+        background-image: url(../../images/img-label1.svg);
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        display: inline-block;
+      }
+
+      .car-label-img7 {
+        background-image: url(../../images/img-label2.svg);
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        display: inline-block;
+      }
+      .car-label-text {
+        color: #4d4d4d;
+        font-size: 12px;
+        margin-left: 3px;
+      }
+    }
+    .car-img {
+      img {
+        max-width: 100%;
+      }
+    }
+    .car-text {
+      .car-year {
+        color: #102b4e;
+        font-size: 14px;
+        padding: 6px 0;
+        display: inline-block;
+        .card-year-link {
+          color: #102b4e;
+          text-decoration: none;
+        }
+        .car-year-icon {
+          display: none;
+          font-size: 12px;
+        }
+        &:hover .car-year-icon {
+          display: inline-block;
+        }
+      }
+
+      .car-price {
+        color: #4d4d4d;
+        font-size: 12px;
+        margin-bottom: 5px;
+        .car-price-number {
+          position: relative;
+          top: -5px;
+          font-size: 10px;
+          color: #0276b3;
+        }
+      }
+
+      .car-infor-link {
+        color: #0276b3;
+        border-bottom: 2px solid #0276b3;
+        text-decoration: none;
+        margin-bottom: 10px;
+        display: inline-block;
+
+        .car-infor-1 {
+          display: inline-block;
+          padding-bottom: 3px;
+          font-size: 14px;
+        }
+
+        .car-infor-2 {
+          display: inline-block;
+          padding-bottom: 3px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .car-btn-list {
+    background-color: #f7f7f7;
+    padding: 14px 0;
+    .car-btn-item {
+      display: inline-block;
+      padding: 9px;
+      @include Responsive(XS) {
+        display: block;
+        margin-bottom: 5px;
+      }
+      .car-btn-link {
+        min-height: 30px;
+        width: auto;
+        min-width: 186px;
+        font-size: 12px;
+        line-height: 1.25;
+        border-radius: 20px;
+        padding: 10px 20px;
+        text-decoration: none;
+        background-color: #0276b3;
+        border: 1px solid #0276b3;
+        color: #fff;
+        @include Responsive(XS) {
+          font-size: 10px;
+          padding: 10px 17px;
+        }
+        &:hover {
+          color: #102b4e;
+          background-color: #fff;
+          border: 1px solid #102b4e;
+        }
+        .car-btn-text {
+        }
+      }
+    }
+  }
+
+  .car-btn-list.car-btn-list-all {
+    text-align: right;
+    background-color: #f7f7f7;
+    padding: 14px 0;
+    .car-btn-item {
+      display: inline-block;
+      padding: 9px;
+      .car-btn-link {
+        min-height: 30px;
+        width: auto;
+        min-width: 186px;
+        font-size: 12px;
+        line-height: 1.25;
+        border-radius: 20px;
+        padding: 10px 20px;
+        text-decoration: none;
+        background-color: #0276b3;
+        border: 1px solid #0276b3;
+        color: #fff;
+        &:hover {
+          color: #102b4e;
+          background-color: #fff;
+          border: 1px solid #102b4e;
+        }
+        .car-btn-text {
+        }
+      }
+    }
+  }
+
+  h3 {
+    font-size: 24px;
+    letter-spacing: 4px;
+    color: #000;
+    margin: 50px 0 13px;
+    text-align: center;
+  }
+
+  .menu-all-car {
+    @include Responsive(XS) {
+      display: none;
+    }
+    padding: 10px 0;
+    background-color: #f7f7f7;
+    .all-car-list {
+      display: flex;
+      .all-car-item {
+        transition: all 0.5s;
+        .all-car-link {
+          padding: 0 8px;
+          font-size: 14px;
+          color: #0276b3;
+          text-decoration: none;
+          transition: all 0.5s;
+          @include Responsive(MD) {
+            font-size: 9px;
+          }
+        }
+      }
+    }
+  }
+
+  #COMMERCIAL {
+    transition: 0.5s;
+  }
+}
